@@ -1,14 +1,17 @@
 # Maven
-# Build your Java project and run tests with Apache Maven.
+
+
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
 - main
 
-pool: test-comp
+pool: testcomp-lab
+
 
 steps:
+
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
